@@ -37,6 +37,7 @@ class AddRecordForm(forms.ModelForm):
 	video_name = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Video title", "class":"form-control"}), label="")
 	brief_description = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Brief description", "class":"form-control"}), label="")
 	video_genre = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Genre", "class":"form-control"}), label="")
+	# Set username by default depend by logged user
 	username = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"The user who provided the information", "class":"form-control"}), label="")
 	video_link = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Video link", "class":"form-control"}), label="")
 

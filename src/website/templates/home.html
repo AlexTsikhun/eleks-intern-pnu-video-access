@@ -4,6 +4,8 @@
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
 
+
+
 <div class="row">
   <div class="col">
 <div class="card card-body">
@@ -30,7 +32,7 @@
     </thead>
     <tbody>
         {% if records %}
-	{% for record in records %}
+	        {% for record in records %}
 		<tr>
 			<td>{{ record.video_name }}</td>
 			<td>{{ record.brief_description }}</td>

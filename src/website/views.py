@@ -75,14 +75,17 @@ def delete_record(request, pk):
 		return redirect('home')
 
 def add_record(request):
-	form = AddRecordForm(request.POST or None)
+	form = AddRecordForm(request.POST or None, initial={'username':request.user})
+
+	# Retrive currently logged user
 	if request.user.is_authenticated:
 		if request.method == "POST":
 			if form.is_valid():
 				add_record = form.save()
 				messages.success(request, "Record Added...")
 				return redirect('home')
-		return render(request, 'add_record.html', {'form':form})
+		return render(request, 'add_record.html', {
+			'form':form,})
 	else:
 		messages.success(request, "You Must Be Logged In...")
 		return redirect('home')
