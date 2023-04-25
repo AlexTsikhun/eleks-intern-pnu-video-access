@@ -59,6 +59,17 @@ A full-fledged CRM system has been created, which provides the ability to manage
 ```
 
 ### An example of a completed task:
+Database:
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/83775762/234347065-483e0ae5-f54d-44c5-9f83-4ef304738623.png">
+
+Date filter:
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/83775762/234347161-d86e46e2-5ab2-4691-b7a8-4960e87690ec.png">
+
+Filter by column name:
+
+<img width="790" alt="image" src="https://user-images.githubusercontent.com/83775762/234347208-fecd9942-4d38-497c-b000-d381527af97e.png">
 
 ### Run code in Windows:
 ```
